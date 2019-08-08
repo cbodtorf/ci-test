@@ -15,7 +15,7 @@ install:
 
 script:
   # - if [[ "$SCRIPT" ]]; then npm run-script $SCRIPT; fi
-  - env
+  - node test.js $ABSTRUSE_EVENT_TYPE
 
 
 cache:
