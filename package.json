@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "request": "^2.88.0"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0"
   }
 }
