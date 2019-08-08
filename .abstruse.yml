@@ -1,0 +1,22 @@
+image: shopify
+branches:
+  - master
+
+matrix:
+  - env: SCRIPT=deploy:ci NODE_VERSION=10
+
+before_install:
+  - nvm install $NODE_VERSION
+  - npm config set spin false
+  - npm config set progress false
+
+install:
+  - npm install
+
+script:
+  # - if [[ "$SCRIPT" ]]; then npm run-script $SCRIPT; fi
+  - env
+
+
+cache:
+  - node_modules
