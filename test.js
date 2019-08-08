@@ -12,5 +12,6 @@ let args = minimist(process.argv.slice(2), {
     }
 });
 
+
 console.log('args:', args);
 console.log('version:', version);
